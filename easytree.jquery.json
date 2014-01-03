@@ -1,0 +1,28 @@
+
+{
+    "name": "EasyTree",
+    "title": "jQuery EasyTree",
+    "description": "Free jQuery plugin for creating tree menus",
+    "keywords": [
+        "tree",
+        "menu"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Matthew Rand",
+        "url": "https://github.com/mattrand/EasyTree"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "homepage": "http://www.easyjstree.com/",
+    "docs": "http://www.easyjstree.com/Docs/",
+    "demos": "http://www.easyjstree.com/Demos/",
+    "download": "http://www.easyjstree.com/Home/Download",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
