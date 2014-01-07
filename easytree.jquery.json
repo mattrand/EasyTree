@@ -22,7 +22,7 @@
     "docs": "http://www.easyjstree.com/Docs/",
     "demos": "http://www.easyjstree.com/Demos/",
     "download": "http://www.easyjstree.com/Home/Download",
-    "dependencies": {
+    "dependencies": { 
         "jquery": ">=1.7"
     }
 }
