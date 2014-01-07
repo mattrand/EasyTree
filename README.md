@@ -4,7 +4,7 @@ EasyTree
 EasyTree Jquery Plugin
 
 
-EasyTree is a free jquery plugin designed to easiliy convert ul list of json to tree menus
+EasyTree is a free jquery plugin designed to easiliy convert ul lists or json to tree menus
 
 Instructions
 =============
