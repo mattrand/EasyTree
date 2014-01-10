@@ -2,10 +2,9 @@
 {
     "name": "easytree",
     "title": "jQuery EasyTree",
-    "description": "Free jQuery plugin for creating tree menus",
+    "description": "Free jQuery plugin for creating tree menus, designed to be easy to use but offer powerful options. Features include persistance, drag 'n' drop, lazy loading and themes",
     "keywords": [
-        "tree",
-        "menu"
+        "tree", "menu","jstree", "ajax", "lazy", "JSON"
     ],
     "version": "1.0.0",
     "author": {
@@ -20,7 +19,7 @@
     ],
     "homepage": "http://www.easyjstree.com/",
     "docs": "http://www.easyjstree.com/Docs/",
-    "demos": "http://www.easyjstree.com/Demos/",
+    "demo": "http://www.easyjstree.com/Demos/",
     "download": "http://www.easyjstree.com/Home/Download",
     "dependencies": { 
         "jquery": ">=1.7"
