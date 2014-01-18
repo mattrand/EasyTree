@@ -2,9 +2,9 @@
  * jQuery EasyTree Plugin
  * http://www.EasyJsTree.com
  *
- * Copyright 2013 Matthew Rand
+ * Copyright 2014 Matthew Rand
  * Released under the MIT license
- * V1.0.0
+ * V1.0.1
  */
 
 
@@ -295,6 +295,7 @@
             $('#' + el.id).addClass('easytree-drag-source');
 
             resetDnd(_dnd);
+            _dnd.createClone = !(el.className.indexOf("easytree-no-clone") > -1);
             _dnd.dragok = true;
             _dnd.sourceEl = el;
             _dnd.sourceId = el.id;
@@ -306,14 +307,15 @@
             if (!_dnd.dragok) { return; }
             if (!_settings.enableDnd) { return; }
 
-            if (!_dnd.clone) {
-                _dnd.clone = createClone(_dnd.sourceEl);
-                $(_dnd.clone).appendTo('body');
+            if (_dnd.createClone) {
+                if (!_dnd.clone) {
+                    _dnd.clone = createClone(_dnd.sourceEl);
+                    $(_dnd.clone).appendTo('body');
+                }
+
+                _dnd.clone.style.left = (event.pageX + 5) + "px";
+                _dnd.clone.style.top = (event.pageY) + "px";
             }
-
-            _dnd.clone.style.left = (event.pageX + 5) + "px";
-            _dnd.clone.style.top = (event.pageY) + "px";
-
 
             var targetEl = getDroppableTargetEl(event.clientX, event.clientY);
             if (!targetEl) {
@@ -464,6 +466,7 @@
         }
         function resetDnd(dnd) {
             dnd.canDrop = false;
+            dnd.createClone = true;
             dnd.clone = null;
             dnd.dragok = false;
             dnd.openDelayTimeout = null;
